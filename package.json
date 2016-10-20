@@ -1,0 +1,46 @@
+{
+  "name": "@ianchadwick/react-material-design-icons",
+  "version": "1.0.5",
+  "description": "Google Material Design icons as react components",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "npm run lib",
+    "clean": "rm -rf icons && mkdir icons",
+    "make-copy": "find src -name '*.jsx' -type f -exec cp {} ./icons \\;",
+    "lib": "npm run clean && npm run make-copy && babel icons -d icons && rm icons/*.jsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mizmoz/react-material-design-icons.git"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "material",
+    "design",
+    "google"
+  ],
+  "author": "Ian Chadwick",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mizmoz/react-material-design-icons/issues"
+  },
+  "homepage": "https://github.com/mizmoz/react-material-design-icons#readme",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-assign": "^6.8.0",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-0": "^6.5.0",
+    "lodash.camelcase": "^4.3.0",
+    "material-design-icons": "^3.0.1",
+    "walk": "^2.3.9"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  }
+}

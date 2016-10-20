@@ -1,0 +1,27 @@
+
+import React, { PropTypes } from 'react';
+
+const LocalLibrary = props => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 48 48"
+      style={props.style}
+      className={props.className}
+    >
+      <path d="M24 23.09C19.27 18.7 12.96 16 6 16v22c6.96 0 13.27 2.7 18 7.09C28.73 40.7 35.04 38 42 38V16c-6.96 0-13.27 2.7-18 7.09zM24 16c3.31 0 6-2.69 6-6s-2.69-6-6-6-6 2.69-6 6 2.69 6 6 6z"/>
+    </svg>
+  );
+};
+
+LocalLibrary.defaultProps = {
+  style: {},
+  className: '',
+};
+
+LocalLibrary.propTypes = {
+  style: PropTypes.object,
+  className: PropTypes.string,
+};
+
+export default LocalLibrary;

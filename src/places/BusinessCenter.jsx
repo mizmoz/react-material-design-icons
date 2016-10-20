@@ -1,0 +1,27 @@
+
+import React, { PropTypes } from 'react';
+
+const BusinessCenter = props => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 48 48"
+      style={props.style}
+      className={props.className}
+    >
+      <path d="M20 32v-2H6.02L6 38c0 2.22 1.78 4 4 4h28c2.22 0 4-1.78 4-4v-8H28v2h-8zm20-18h-8.02v-4l-4-4h-8L16 10v4H8.01c-2.21 0-4 1.79-4 4v6c0 2.21 1.79 4 4 4h12v-4h8v4h12c2.21 0 4-1.79 4-4v-6c-.01-2.21-1.8-4-4.01-4zm-12.01 0h-8v-4h8v4z"/>
+    </svg>
+  );
+};
+
+BusinessCenter.defaultProps = {
+  style: {},
+  className: '',
+};
+
+BusinessCenter.propTypes = {
+  style: PropTypes.object,
+  className: PropTypes.string,
+};
+
+export default BusinessCenter;
